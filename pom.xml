@@ -124,7 +124,7 @@
                         <artifactId>jib-maven-plugin</artifactId>
                         <configuration>
                             <to>
-                                <image>gcr.io/kubernetes-cluster-205116/knative-spring-boot-demo</image>
+                                <image>gcr.io/kubernetes-cluster-11111/knative-spring-boot-demo</image>
                             </to>
                         </configuration>
                     </plugin>
