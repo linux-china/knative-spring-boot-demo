@@ -1,0 +1,16 @@
+apiVersion: serving.knative.dev/v1alpha1 # Current version of Knative
+kind: Service
+metadata:
+  name: knative-spring-boot-demo # The name of the app
+  namespace: default # The namespace the app will use
+spec:
+  runLatest:
+    configuration:
+      revisionTemplate:
+        spec:
+          container:
+            # please replace your image url
+            image: gcr.io/kubernetes-cluster-111/knative-spring-boot-demo
+            env:
+            - name: APP # The environment variable printed out by the sample app
+              value: "knative-spring-boot-demo"
