@@ -1,0 +1,8 @@
+### local test
+GET http://localhost:8080
+
+### testing for GKE, please replace your ip
+GET http://35.111.111.11/
+Host: knative-spring-boot-demo.default.example.com
+
+###
